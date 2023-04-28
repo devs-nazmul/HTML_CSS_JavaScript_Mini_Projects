@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    font-size: 6.25%;
+}
+
+a:visited, a:link{
+    color: #a9a9a9;
+    transition: all 0.4s ease;
+
+}
+
+a:hover, a:active{
+    color: blue;
+    transition: all 0.4s ease;
+
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif ;
+    margin: 0;
+    padding: 0;
+    font-size: 15rem;
+}
+
+i{
+    font-size: 20rem;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 93%);
+}
+
+.container{
+    max-width: 350rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10rem;
+    padding: 20rem 10rem;
+    box-shadow: 0rem 10rem 15rem -3rem rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    width: 150rem ;
+    height: 150rem ;
+    border-radius: 50%;
+    border: 3rem solid blue;
+    z-index: 1;
+}
+
+.imageProfile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3rem solid hsl(0, 0%, 100%);
+}
+
+.textData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title3{
+    font-size: 18rem;
+    font-weight: 500;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+    align-items: center;
+}
+
+.icons a{
+    padding: 5rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    margin: 5rem;
+}
+
+.getTouch button{
+    padding: 8rem 20rem;
+    border: 2rem solid #e1e1e1;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 10rem 5rem;
+    font-size: 14rem;
+    font-weight: 500;
+    border: 2rem solid #e3e3e3;
+
+}
+
+
+.getTouch button:hover{
+    background-color: blue;
+    color: white;
+    transition: all 0.4s ease;
+    border: 2rem solid blue;
+}
+
+.analysis{
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+}
+.analysis .data{
+    display: flex;
+    padding: 0rem 10rem;
+    border-right: 2rem solid #e3e3e3;
+    cursor: pointer;
+
+
+}
+
+.analysis .data:last-child{
+    border-right: none;
+}
+
+.analysis .data i{
+    padding: 0rem 5rem;
+    transition: all 0.3s;
+    color: #dadada;
+}
+
+.analysis .data:hover i{
+    color: blue;
+}
+
+
+.headerBG{
+    background-color: blue;
+    height: 130rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10rem 10rem 0 0;
+}
