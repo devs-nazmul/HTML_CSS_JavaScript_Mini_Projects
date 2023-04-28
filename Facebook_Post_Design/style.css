@@ -82,7 +82,6 @@ i{
     border-bottom: 1rem solid #343434;
     position: relative;
     justify-content: center;
-
 }
 
 .header h5{
@@ -98,7 +97,15 @@ i{
     cursor: pointer;
     position: absolute;
     right: 0;
+}
 
+.Audience i{
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    line-height: 30rem;
+    text-align: center;
+    left: 0;
 }
 
 .user{
@@ -234,3 +241,4 @@ i{
 .button .postButton:hover{
     background-color: #1b1b9b;
 }
+
