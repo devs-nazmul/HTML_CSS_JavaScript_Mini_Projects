@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@500;700&display=swap');
+
+a{ text-decoration: none; transition: all 0.2s }
+li{ list-style-type: none; }
+
+h1{ font-size: 60rem; }
+h2{ font-size: 50rem; }
+h3{ font-size: 40rem; }
+h4{ font-size: 30rem; }
+h5{ font-size: 20rem; }
+h6{ font-size: 10rem; }
+
+a:link, a:visited{ color: var(--blue); }
+
+a:hover, a:active{ color: var(--red); }
+
+:root{
+    --black: #000;
+    --white: #ffffff;
+    --blue: #00f;
+    --red: #ff0000;
+
+    font-size: 6.25%;
+    font-weight: 500;
+}
+
+
+::-webkit-scrollbar {
+    width: 5rem
+}
+
+::-webkit-scrollbar-track {
+    background-color: #574d4d;
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, Ubuntu, sans-serif;
+    font-size: 15rem;
+}
+
+Body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 420rem;
+    width: 100%;
+    background-color: #2c2929;
+    border-radius: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 20rem;
+}
+
+
+i{
+    font-size: 25rem;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15rem 5rem;
+    color: #f3f3f3;
+    border-bottom: 1rem solid #343434;
+    position: relative;
+    justify-content: center;
+
+}
+
+.header h5{
+    font-size: 20rem;
+    font-weight: 600;
+    color: #cecece;
+}
+
+.header i{
+    background-color: #3a3939;
+    padding: 5rem 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image{
+    width: 50rem;
+    height: 50rem;
+    margin-right: 15rem;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dropDownPrivacy{
+    display: flex;
+    background-color: #413e3e;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5rem;
+    width: 80rem;
+    padding:3rem 3rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.dropDownPrivacy:hover{
+    background-color: #505050;
+}
+
+.dropDownPrivacy i, .dropDownPrivacy p{
+    font-size: 12rem;
+    color: #919191;
+}
+
+.name{
+    padding: 10rem 0rem;
+}
+
+.name>p{
+    color: white;
+}
+
+.TextForm textArea{
+    width: 100%;
+    resize: none;
+    border-radius: 5rem;
+    padding: 5rem 5rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.TextForm textArea:focus{
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.colorOption{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10rem 0rem;
+
+}
+
+.colorOption :first-child{
+    background-color: #231f1f;
+    width: 35rem;
+    height: 35rem;
+    line-height: 35rem;
+    text-align: center;
+    border-radius: 25%;
+    outline: 2rem solid #423c3c;
+    cursor: pointer;
+}
+
+.colorOption :last-child{
+    color: #757575;
+    cursor: pointer;
+
+}
+.addPost{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 10rem;
+    border: 1rem solid #413e3e;
+    border-radius: 10rem;
+    color: white;
+    margin: 10rem 0;
+}
+
+.addPost span{
+    cursor: pointer;
+    color: #b6b6b6;
+    font-weight: 400;
+    font-size: 14rem;
+}
+
+.addPost .icons i{
+    padding: 2rem;
+    color: #7e7e7e;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.addPost .icons i:hover{
+    color: #0056fa;
+}
+
+.button .postButton{
+    width: 100%;
+    padding: 10rem 0rem;
+    cursor: pointer;
+    color: white;
+    background-color: #3857ff;
+    border: none;
+    font-weight: 500;
+    border-radius: 10rem;
+    margin-bottom: 10rem;
+    transition: all 0.2s;
+}
+
+.button .postButton:hover{
+    background-color: #1b1b9b;
+}
