@@ -10,7 +10,7 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	
 	
-	<title>FaceBook Post</title>
+	<title>Pricing Card</title>
 
 </head>
 <body>
@@ -18,56 +18,144 @@
 	<div class="container">
 		
 		<div class="header">
-			<h1></h1>
-			<h5>Create Post</h5>
-			<i class='bx bx-x'></i>
-		</div>
-		
-		<div class="user">
 			
-			<div class="image">
-				<img src="../Assets/Images/mosque.png" alt="">
+			<input type="radio" name="form" id="basic">
+			<input type="radio" name="form" id="standard" checked>
+			<input type="radio" name="form" id="premium">
+			
+			<div class="headerLabel">
+				<label onclick="basicFeature(this)" class="tab1" for="basic">Basic</label>
+				<label onclick="basicFeature(this)" class="tab2" for="standard">Standard</label>
+				<label onclick="basicFeature(this)" class="tab3" for="premium">Premium</label>
 			</div>
 			
-			<div class="name">
-				<p>Belivup Limited</p>
-				
-				<div class="dropDownPrivacy">
-					<i class='bx bx-globe' ></i>
-					<p>Public</p>
-					<i class='bx bxs-down-arrow' ></i>
+			
+		</div>
+		
+		<div class="feature">
+			
+			<div class="basicFeature">
+				<div class="info">
+					<span>$9.99</span> <br>
+					<span>Basic Plan</span>
 				</div>
+				<ul>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>HTML CSS JavaScript</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>React Node Next</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Storage</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Cloud Servers</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Domains & Hosting</p>
+					</li>
+				</ul>
 			</div>
 			
-		</div>
-		
-		<div class="textArea">
-			<form action="" class="TextForm">
-				<textarea name="" id="" cols="5" rows="3" placeholder="What's on your mind, Belivup?"></textarea>
-			</form>
-		</div>
-		
-		<div class="colorOption">
-			<i class='bx bx-palette' ></i>
-			<i class='bx bx-smile' ></i>
-		</div>
-		
-		<div class="addPost">
-			<span>Add to your post</span>
-			<div class="icons">
-				<i class='bx bx-images' ></i>
-				<i class='bx bx-user' ></i>
-				<i class='bx bx-happy' ></i>
-				<i class='bx bx-location-plus' ></i>
-				<i class='bx bx-dots-horizontal-rounded' ></i>
+			<div class="premiumFeature active">
+				<div class="info">
+					<span>$19.99</span> <br>
+					<span>Standard Plan</span>
+				</div>
+				<ul>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>HTML CSS JavaScript</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>React Node Next</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Storage</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Cloud Servers</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Domains & Hosting</p>
+					</li>
+				</ul>
 			</div>
-		</div>
+			
+			<div class="stanFeature">
+				<div class="info">
+					<span>$29.99</span> <br>
+					<span>Premium Plan</span>
+				</div>
+				<ul>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>HTML CSS JavaScript</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>React Node Next</p>
+					</li>
+					
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Storage</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Unlimited Cloud Servers</p>
+					</li>
+					<li>
+						<i class='bx bx-check'> </i>
+						<p>Domains & Hosting</p>
+					</li>
+				</ul>
+			</div>
+			
+			<br>
+			<button>Get Started</button>
 		
-		<div class="button">
-			<button class="postButton">Post</button>
 		</div>
 		
 	</div>
+
+<script>
+	
+	function basicFeature(e){
+		
+		const tab = e.classList.value
+		document.getElementsByClassName('basicFeature')[0].classList.remove("active")
+		document.getElementsByClassName('premiumFeature')[0].classList.remove("active")
+		document.getElementsByClassName('stanFeature')[0].classList.remove("active")
+		
+		if (tab === "tab1"){
+			document.getElementsByClassName('basicFeature')[0].classList.add("active")
+		} else if (tab === "tab2"){
+			document.getElementsByClassName('premiumFeature')[0].classList.add("active")
+		} else {
+			document.getElementsByClassName('stanFeature')[0].classList.add("active")
+		}
+	}
+	
+</script>
 
 </body>
 </html>

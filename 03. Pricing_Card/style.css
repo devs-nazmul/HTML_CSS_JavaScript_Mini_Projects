@@ -25,20 +25,6 @@ a:hover, a:active{ color: var(--red); }
 }
 
 
-::-webkit-scrollbar {
-    width: 5rem
-}
-
-::-webkit-scrollbar-track {
-    background-color: #574d4d;
-    border-radius: 5rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 5rem;
-}
-
 
 *{
     box-sizing: border-box;
@@ -52,185 +38,111 @@ Body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #000000;
+    background-color: #ececec;
     align-items: center;
     justify-content: center;
 }
 
 .container{
-    max-width: 420rem;
+    max-width: 380rem;
     width: 100%;
-    background-color: #2c2929;
+    background-color: #ffffff;
     border-radius: 10rem;
-
     display: flex;
     flex-direction: column;
     padding: 10rem 20rem;
+    box-shadow: 0 10rem 15rem -3rem rgba(0,0,0,0.1);
 }
 
-
-i{
-    font-size: 25rem;
+input{
+    display: none;
 }
-
 .header{
     width: 100%;
+}
+
+.headerLabel{
     display: flex;
     align-items: center;
-    padding: 15rem 5rem;
-    color: #f3f3f3;
-    border-bottom: 1rem solid #343434;
-    position: relative;
-    justify-content: center;
-
 }
-
-.header h5{
-    font-size: 20rem;
-    font-weight: 600;
-    color: #cecece;
-}
-
-.header i{
-    background-color: #3a3939;
-    padding: 5rem 5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-
-}
-
-.user{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.image{
-    width: 50rem;
-    height: 50rem;
-    margin-right: 15rem;
-}
-.image img{
+.headerLabel label{
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.dropDownPrivacy{
-    display: flex;
-    background-color: #413e3e;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 5rem;
-    width: 80rem;
-    padding:3rem 3rem;
-    cursor: pointer;
-    transition: all 0.1s;
-}
-
-.dropDownPrivacy:hover{
-    background-color: #505050;
-}
-
-.dropDownPrivacy i, .dropDownPrivacy p{
-    font-size: 12rem;
-    color: #919191;
-}
-
-.name{
-    padding: 10rem 0rem;
-}
-
-.name>p{
-    color: white;
-}
-
-.TextForm textArea{
-    width: 100%;
-    resize: none;
-    border-radius: 5rem;
-    padding: 5rem 5rem;
-    border: none;
-    background-color: transparent;
-    color: white;
-}
-
-.TextForm textArea:focus{
-    border: none;
-    outline: none;
-    color: white;
-}
-
-.colorOption{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 10rem 0rem;
-
-}
-
-.colorOption :first-child{
-    background-color: #231f1f;
-    width: 35rem;
-    height: 35rem;
-    line-height: 35rem;
+    /*background-color: red;*/
+    padding: 10rem 15rem;
+    border-radius: 30rem;
+    margin: 5rem;
     text-align: center;
-    border-radius: 25%;
-    outline: 2rem solid #423c3c;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
-.colorOption :last-child{
-    color: #757575;
-    cursor: pointer;
+#basic:checked ~ .headerLabel label.tab1{
+    color: white;
+    background-color: blue;
 
 }
-.addPost{
+
+#standard:checked ~ .headerLabel label.tab2{
+    color: white;
+    background-color: blue;
+
+
+}
+
+#premium:checked ~ .headerLabel label.tab3{
+    color: white;
+    background-color: blue;
+}
+
+.feature{
+    margin: 30rem 20rem;
+}
+
+.feature .info :first-child{
+    font-size: 30rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.feature .info{
+    margin-bottom: 30rem;
+    text-align: center;
+}
+
+
+.basicFeature ul li, .stanFeature ul li, .premiumFeature ul li{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 7rem 10rem;
-    border: 1rem solid #413e3e;
-    border-radius: 10rem;
-    color: white;
-    margin: 10rem 0;
+    line-height: 2;
 }
 
-.addPost span{
-    cursor: pointer;
-    color: #b6b6b6;
-    font-weight: 400;
-    font-size: 14rem;
+.basicFeature ul li i, .stanFeature ul li i, .premiumFeature ul li i{
+    color: green;
+    margin-right: 10rem;
 }
 
-.addPost .icons i{
-    padding: 2rem;
-    color: #7e7e7e;
-    transition: all 0.2s;
-    cursor: pointer;
+
+.basicFeature, .stanFeature, .premiumFeature{
+    display: none;
 }
 
-.addPost .icons i:hover{
-    color: #0056fa;
+.feature .active{
+    display: block;
 }
 
-.button .postButton{
+button{
     width: 100%;
-    padding: 10rem 0rem;
-    cursor: pointer;
+    padding: 10rem 30rem;
+    background-color: blue;
     color: white;
-    background-color: #3857ff;
     border: none;
-    font-weight: 500;
     border-radius: 10rem;
-    margin-bottom: 10rem;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
-.button .postButton:hover{
-    background-color: #1b1b9b;
+button:hover{
+    background-color: #0c0ccb;
 }
+
+
