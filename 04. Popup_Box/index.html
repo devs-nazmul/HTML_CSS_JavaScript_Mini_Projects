@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!--inking CSS Files-->
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	
+	
+	<title>Popup Box</title>
+
+</head>
+<body>
+
+	<div class="showPopup">
+		<p>Click here to Show Popup</p> <br>
+		<button onclick="showPopup()">Show Popup</button>
+	</div>
+	<div class="container">
+		<div class="popup">
+			<div class="header">
+				<span>Social Media</span>
+				<i onclick="showPopup()" class='bx bx-x'></i>
+			</div>
+			
+			<div class="socialLinks">
+				
+				<p>Share the link via</p>
+				
+				<div class="icons">
+					<i class='bx bxl-facebook' ></i>
+					<i class='bx bxl-twitter' ></i>
+					<i class='bx bxl-instagram' ></i>
+					<i class='bx bxl-whatsapp' ></i>
+					<i class='bx bxl-telegram' ></i>
+				</div>
+				
+				<p>Or copy link</p>
+				
+				<div class="linkCopy">
+					<label for="link">
+						<i class='bx bx-link' ></i>
+						<input type="text" id="link" value="Belivup.com/share" >
+					</label>
+					<button class="btn" onclick="Copied()">Copy</button>
+				</div>
+			
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+		
+		
+		function Copied(){
+			
+			const input =  document.querySelector("#link")
+			input.select()
+			const button = document.querySelector(".btn")
+			button.innerHTML= "Copied"
+	
+			navigator.clipboard.writeText(input.value)
+			
+			setTimeout(() => {
+				button.innerHTML = "Copy"
+				window.getSelection()?.removeAllRanges()
+				
+			}, 2000)
+		}
+		
+		function showPopup(){
+			
+			const container = document.querySelector(".container")
+			container.classList.toggle("show")
+			
+		}
+		
+	</script>
+
+</body>
+</html>
