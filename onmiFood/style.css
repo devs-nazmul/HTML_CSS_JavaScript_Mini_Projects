@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Ubuntu:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    /* --- 1 rem to 16 px by default but we changed 1rem to 1 px  ---*/
+    font-size: 1px;
+
+    --primaryColor: #ff4f05;
+    --lightColor: #faf2e1;
+    --secondColor: #ff0000;
+
+    --primaryText: #2f0e0e;
+    --secondText: #593a32;
+    --altText: #d0d0d0;
+
+    --marginBig: 50rem;
+    --marginSmall: 25rem;
+
+    --regularFont: normal;
+    --mediumFont: 500;
+    --semiBoldFont: 600;
+    --boldFont: 800;
+
+    --pBigSize: 17rem;
+    --pSize: 15rem;
+
+
+    --primaryFont: Poppins, sans-serif;
+
+}
+
+
+h1 { font-size: 50rem; }
+h2 { font-size: 45rem; }
+h3 { font-size: 35rem; }
+h4 { font-size: 25rem; }
+h5 { font-size: 20rem; }
+h6 { font-size: 15rem; }
+
+li { list-style-type: none; }
+
+img { width: 100%; }
+
+body{
+    font-size: 15rem;
+    font-family: var(--primaryFont);
+
+}
+
+
+
+.container{
+    max-width: 1400rem;
+    margin: 0 auto;
+    padding: 0 50rem;
+}
+
+.innerPadding{
+    padding: 50rem 0;
+}
+
+.innerPadding-sm{
+    padding: 50rem 0;
+}
+
+
+.grid{
+    display: grid;
+    gap: 60rem;
+    padding: 20rem 0;
+}
+
+.grid-center{
+    align-items: center;
+}
+
+.grid-col-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-4{
+    grid-template-columns: repeat(4, 1fr)
+}
+.grid-col-5{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+
+.grid-col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bdLight{
+    background-color: var(--lightColor);
+}
+
+
+
+
+.center{
+    text-align: center;
+}
+
+.icon{
+    max-height: 20rem;
+    color: var(--primaryColor);
+}
+
+
+header{
+    background-color: rgba(255, 255, 255, 0.98);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 9px -3px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+
+
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+
+.navLink{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.navItems img{
+    max-height: 30rem;
+}
+
+.navItems ul{
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.navButton{
+    display: flex;
+    align-items: center;
+}
+
+.navIcon {
+    position: relative;
+    width: 50rem;
+    display: none;
+}
+
+.navIcon svg{
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navItems li a{
+    text-decoration: none;
+    font-size: 17rem;
+    font-weight: 500;
+    color: var(--primaryText);
+    transition: all 0.3s;
+
+}
+
+.navItems .btn{
+    padding: 10rem 20rem;
+    border-radius: 5rem;
+    color: white;
+}
+
+.navItems .btn:hover {
+    color: white;
+    padding: 10rem 20rem;
+    border-radius: 5rem;
+}
+
+
+.navItems li a:hover{
+    color: var(--primaryColor);
+}
+
+
+/* --- Working With Hero Section --- */
+
+.heroSection{
+    background-color: var(--lightColor);
+}
+
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100rem;
+    padding: 50rem;
+}
+
+
+.heroTitle{
+    line-height: 1.2;
+    margin-bottom: var(--marginBig);
+    color: var(--primaryText);
+}
+
+.heroText{
+    line-height: 2;
+    color: var(--secondText);
+    margin-bottom: var(--marginBig);
+    font-weight: var(--mediumFont);
+    font-size: var(--pBigSize);
+}
+
+.btn{
+    color: white;
+    font-weight: var(--mediumFont);
+    background-color: var(--primaryColor);
+    padding: 15rem 30rem;
+    border-radius: 10rem;
+    display: inline-block;
+    border: 2px solid var(--primaryColor);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--secondColor);
+    padding: 15rem 30rem;
+    border-radius: 10rem;
+    border: 2px solid var(--secondColor);
+}
+
+.btnOutline{
+    font-weight: var(--mediumFont);
+    border: 2px solid #eee2cf;
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+.marginRight{
+    margin-right: 20rem;
+}
+
+
+.deliverImages{
+    padding-left: 15rem;
+    display: flex;
+    align-items: center;
+    margin: 30rem 0;
+}
+
+.deliverImages img{
+    width: 40rem;
+    border-radius: 50%;
+    margin-left: -15rem;
+    border: 3px solid white;
+}
+
+.deliverImages span{
+    font-weight: bold;
+    margin-left: 10rem;
+}
+
+.sectionHeader h5{
+    color: var(--primaryColor);
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+}
+
+
+
+
+
+ /*--- Working with Featured in Lists*/
+
+.featuredSection{
+    background-color: #fcfafa;
+}
+
+.featured-in h4{
+    text-align: center;
+    margin: 30rem 0;
+}
+
+.feature-icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 50rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.feature-icons img{
+    max-height: 30rem;
+    max-width: 100%;
+    filter: brightness(0%)
+    opacity(40%);
+    transition: all 0.3s;
+}
+
+.feature-icons img:hover{
+    filter: brightness(100%)
+    opacity(100%);
+}
+
+
+/*STEP SECTION*/
+
+.stepSection{
+    padding: 50rem 0;
+}
+
+
+.stepImage{
+    width: 35%;
+    justify-self: center;
+    position: relative;
+}
+
+.stepImage::before, .stepImage::after{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stepImage::before{
+    padding: 90%;
+    background-color: var(--lightColor);
+    z-index: -2;
+}
+
+
+.stepImage::after{
+    padding: 70%;
+    background-color: #f8e1cb;
+    z-index: -1;
+}
+
+
+.altText span{
+    font-size: 80rem;
+    color: var(--altText);
+    font-weight: 600;
+}
+
+.altText h4{
+    font-size: 30rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40rem;
+}
+
+.altText p{
+    color: var(--secondText);
+    width: 90%;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+
+ /*--- Working with Meal Plan -- */
+
+.mealPlan, .cardBox{
+    box-shadow: 0 24rem 48rem rgba(0, 0, 0, 0.1);
+    border-radius: 10rem;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.mealPlan:hover{
+    transform: scale(105%);
+}
+
+.mealSection{
+    max-width: 90%;
+    margin: 30rem auto;
+}
+
+.mealInfo{
+    padding: 10rem 20rem ;
+}
+
+.mealPlan span{
+    padding: 3rem 10rem;
+    background-color: var(--secondColor);
+    color: white;
+    border-radius: 3rem;
+    font-size: 10rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mealList li{
+    display: flex;
+    align-items: center;
+    margin: 10rem  0;
+    gap: 10rem;
+    font-weight: 500;
+}
+
+.dietList .mealList li{
+    margin: 20rem  0;
+}
+
+.mealList svg{
+    max-height: 20rem;
+    color: var(--primaryColor);
+}
+
+.allRecipe{
+    text-align: center;
+}
+
+
+
+ /*-- Testimonial Sections --*/
+
+.testimonial{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20rem;
+    align-items: center;
+}
+
+.testimonial .userDetails{
+    margin: 5rem;
+    background-color: #efe7d6;
+    padding: 20rem;
+    border-radius: 10rem;
+}
+
+.testimonial h3{
+    grid-column: 1 / -1;
+}
+
+.testimonial .userDetails img{
+    border-radius: 50%;
+    max-width: 50rem;
+    margin-bottom: 15rem;
+}
+
+.testimonial .userDetails p {
+    margin: 30rem 0 0 0;
+    color: #7e7e7e;
+}
+
+.gallery{
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.gallery img{
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.gallery img:hover {
+    transform: scale(105%);
+}
+
+.priceHeader{
+    text-align: center;
+    padding: 30rem 0;
+    background-color: #f3e9d0;
+}
+
+.priceHeader h5{
+    text-transform: uppercase;
+}
+.priceHeader span{
+    text-transform: uppercase;
+    font-size: 50rem;
+    font-weight: bold;
+}
+
+.pricingPlan:nth-child(2) .priceHeader {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.pricingPlan:nth-child(2):before{
+    content: "BEST VALUE";
+    color: black;
+    font-weight: 600;
+    font-size: 12rem;
+    transform: rotate(45deg);
+    height: 20rem;
+    background-color: var(--lightColor);
+    position: absolute;
+    padding: 0 40rem;
+    top: 25rem;
+    right: -38rem;
+}
+
+.pricingPlan:nth-child(1){
+    border: 2px solid #f3e9d0;
+}
+
+.pricing{
+    max-width: 800rem;
+    margin: 0 auto;
+}
+
+.pricingPlan{
+    border-radius: 10rem;
+    overflow: hidden;
+    transition: all 0.3s;
+    /*padding: 30rem 20rem;*/
+    background-color: var(--lightColor);
+    max-width: 400rem;
+    padding-bottom: 30rem;
+    border: 2px solid var(--primaryColor);
+    position: relative;
+}
+
+.pricingList{
+    padding: 20rem;
+}
+
+
+.featureItem svg{
+    color: var(--primaryColor);
+    max-height: 30rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.icon{
+    background-color: var(--lightColor);
+    display: inline-block;
+    align-items: center;
+    padding: 30rem;
+    border-radius: 50%;
+}
+
+.featureItem > * {
+    margin: 10rem;
+}
+
+
+.ctaSection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60rem;
+    /*padding: 20rem;*/
+
+    background: linear-gradient(to right bottom, rgba(255, 79, 0, 0.95), rgba(255, 40, 5, 0.9));
+    border-radius: 10rem;
+    overflow: hidden;
+
+    /*height: 500rem;*/
+}
+
+.ctaImage{
+    background: linear-gradient(to right bottom, rgba(255, 0, 0, 0.35), rgba(255, 79, 5, 0.35)), url("./img/eating.jpg") center/cover;
+    /*border-radius: 10rem;*/
+}
+
+.ctaInfo{
+    color: white;
+    padding: 40rem;
+}
+.ctaInfo p, .ctaInfo label{
+    font-size: 17rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.ctaForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50rem;
+    grid-row-gap: 30rem;
+    margin: 50rem 0 0 0;
+}
+
+.ctaForm label{
+    display: block;
+}
+
+.ctaForm :where(input, select, .btnForm){
+    padding: 15rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 5rem 0;
+
+    border-radius: 10rem;
+    font-size: 15rem;
+    font-weight: 500;
+    font-family: inherit;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+.ctaForm select{
+    border-right: 10rem solid transparent;
+}
+
+.ctaForm :where(input, select):focus{
+    outline: 3px solid #ff7224;
+}
+
+.btnForm{
+    color: red;
+    cursor: pointer;
+    align-self: end;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnForm:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+/*--- Footer -- */
+
+.footerSection{
+    background-color: var(--lightColor);
+    margin-top: 100rem;
+    padding: 50rem 0;
+}
+
+.footerLogo img, .headerLogo img{
+    max-height: 30rem;
+    width: auto;
+}
+.footerLogo p{
+    font-size: 14rem;
+}
+
+.footer-social-links li{
+    display: inline-block;
+    margin: 15rem 0;
+}
+
+address .addressDetail > a{
+    line-height: 1;
+}
+
+.addressDetail{
+    margin-bottom: 15rem;
+}
+
+
+.footerNav a, .footerAddress a {
+    text-decoration: none;
+    font-size: 16rem;
+    color: #7a4336;
+    transition: all 0.3s;
+    line-height: 2.2;
+    font-style: normal;
+
+}
+
+.footerNav a:hover{
+    color: var(--secondColor);
+    text-decoration: underline;
+}
+
+.footerAddress a:hover{
+    color: var(--secondColor);
+}
+
+
+.mainFooter h6{
+    margin-bottom: 20rem;
+}
+
+.social-icon a svg{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-icon a{
+    fill: white;
+    padding: 15rem;
+    background-color: var(--primaryColor);
+    border-radius: 10%;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.social-icon a:hover{
+    background-color: var(--secondColor);
+    transform: scale(1.05);
+}
+
+.footer-social-links{
+    margin: 20rem 0;
+}
+
+.active .navLinks{
+    display: block;
+}
+
+.navLinks.active{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 85rem;
+    left: 0;
+    line-height: 3;
+    gap: 20rem;
+    color: white;
+    background-color: var(--lightColor);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30rem 20rem;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+

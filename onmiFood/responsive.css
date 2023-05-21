@@ -1,0 +1,272 @@
+
+@media screen and (max-width: 75em) {
+
+    .hero{
+        gap: 50rem;
+    }
+    .heroTitle{
+        font-size: 35rem;
+    }
+    .heroText{
+        font-size: 15rem;
+    }
+    .testimonial h3{
+        font-size: 25rem;
+    }
+}
+
+@media screen and (max-width: 70em){
+    .mealSection{
+        max-width: 100%;
+    }
+    .ctaInfo h2{
+        font-size: 35rem;
+    }
+
+    .ctaInfo p{
+        font-size: 15rem;
+    }
+
+    .gallerySection{
+        gap: 20rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 62.5em){
+    .mealSection{
+        gap: 20rem;
+    }
+
+    .gallerySection{
+        grid-template-columns: 1fr
+    }
+    .gallery{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 57.5em){
+
+    .navItems ul{
+        gap: 15rem;
+    }
+
+    .navItems ul a{
+        font-size: 15rem;
+    }
+
+    .hero{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .heroTitle{
+        margin-bottom: 20rem;
+    }
+    .stepInfo p{
+        font-size: 15rem;
+        line-height: 1.7;
+    }
+
+    .stepInfo h4{
+        line-height: 1.5;
+    }
+
+    .ctaInfo{
+        padding: 20rem 5rem 20rem 30rem;
+    }
+    .ctaInfo h2{
+        font-size: 30rem;
+        margin-bottom: 10rem;
+    }
+    .ctaForm{
+        margin: 20rem 0 0 0;
+        gap: 20rem;
+    }
+
+    .ctaForm label{
+        font-size: 15rem;
+    }
+
+    .ctaSection{
+        gap: 20rem;
+    }
+
+    .mainFooter{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footerLogo{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .priceFeature{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stepImage{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 50em){
+
+    .container{
+        padding: 0 20rem;
+    }
+
+    .navItems img{
+        max-height: 25rem;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 80rem;
+        max-width: 90%;
+    }
+    .heroImage{
+        display: none;
+    }
+    .deliverImages{
+        justify-content: center;
+    }
+
+    .stepSection{
+        gap: 20rem;
+    }
+    .stepInfo h4{
+        font-size: 25rem;
+        margin-bottom: 20rem;
+    }
+
+
+    .sectionHeader{
+        text-align: center;
+        font-size: 25rem;
+    }
+
+    .sectionHeader h3{
+        font-size: 25rem;
+    }
+
+    .stepImage{
+        width: 40%;
+    }
+
+    .stepImage{
+        width: 50%;
+    }
+    .mealList{
+        font-size: 14rem;
+    }
+
+    .mealInfo {
+        padding: 10rem 10rem;
+    }
+
+    .dietList .mealList li {
+        margin: 15rem 0;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery > img:last-child{
+        display: none;
+    }
+    .feature-icons{
+        max-width: 100%;
+        gap: 20rem ;
+    }
+
+}
+
+@media screen and (max-width: 45em) {
+
+    .navLinks{
+        display: none;
+    }
+
+    .navIcon{
+        display: block;
+    }
+
+    .ctaForm{
+        grid-template-columns: 1fr;
+    }
+
+    .ctaSection{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 35em){
+    .mealSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pricing{
+        gap: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 30em){
+    .hero .marginRight{
+        margin: 20rem;
+    }
+
+    .stepSection{
+        grid-template-columns: 1fr;
+    }
+
+    .mealSection, .pricing, .ctaSection, .mainFooter{
+        grid-template-columns: 1fr;
+    }
+
+    .stepSection .stepImage{
+        grid-row: 1;
+    }
+
+    .testimonial{
+        gap: 10rem;
+    }
+
+    .testimonial .userDetails{
+        padding: 10rem;
+    }
+
+    .ctaImage{
+        height: 300rem;
+        grid-row: 1;
+    }
+    .ctaInfo {
+        padding: 20rem 20rem 20rem 30rem;
+    }
+    .footerLogo{
+        grid-row: 2;
+    }
+
+    .footerSection{
+        margin-top: 30rem;
+    }
+    .priceFeature{
+        gap: 10rem;
+    }
+    .navItems img{
+        max-height: 20rem;
+    }
+}
+
+.body{
+    position: relative;
+}
+
+
+
